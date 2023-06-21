@@ -1,60 +1,60 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "AccessOwl",
+  "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/light.png",
-    "light": "/logo/light.png"
+    "dark": "/logo/accessowl.png",
+    "light": "/logo/accessowl.png"
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#166FCC",
-    "light": "#629DDB",
-    "dark": "#064281"
+    "primary": "#156ecb",
+    "light": "#5993d9",
+    "dark": "#156ecb"
+  },
+  "modeToggle": {
+    "isHidden": true
   },
   "topbarLinks": [
     {
-      "name": "Contact us",
+      "name": "Get in touch",
       "url": "https://www.accessowl.io/contact"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Login",
-    "url": "https://app.accessowl.io"
-  },
   "tabs": [],
+  "topbarCtaButton": {
+    "name": "Get free demo",
+    "url": "https://www.accessowl.io/#sign-up"
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "General",
+      "pages": ["general/get-started", "general/general-process"]
+    },
+    {
+      "group": "How-to",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "how-to/access-reviews",
+        "how-to/access-templates",
+        "how-to/application-permissions-structure",
+        "how-to/offboarding",
+        "how-to/onboarding",
+        "how-to/access-on-demand"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Integrations",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "integrations/overview",
+        {
+          "group": "Supported Integrations",
+          "pages": [
+            "integrations/supported-integrations/google-workspace",
+            "integrations/supported-integrations/vanta",
+            "integrations/supported-integrations/zoom"
+          ]
+        }
       ]
     }
   ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/accessowl",
-    "github": "https://github.com/accessowl",
-    "linkedin": "https://www.linkedin.com/company/accessowl"
-  },
-  "backgroundImage": "/background.png"
+  "backgroundImage": "/images/background.png"
 }

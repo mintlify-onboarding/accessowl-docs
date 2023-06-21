@@ -1,0 +1,32 @@
+---
+title: Application Permission Structure
+---
+
+AccessOwl supports three different possiblities to map out an application permission structure, which build on each other.
+
+## 1. One set of Roles/Permissions per application
+
+This is the easiest form. The application has a set of Roles/Permissions (Entitlements). You can specify whether…
+
+- only entitlement can be selected, or
+- multiple roles can be selected.
+
+For instance, when somebody can assume only one role in an application, the first option is the right one.
+
+![Permission Structure 1](/images/premission_structure_1.png)
+
+## 2. Several sets of Roles/Permissions per application by adding an object layer
+
+To convert an application from **1** to **2**, click on the blue button top right of the Roles/Permissions box.
+
+This way, you can add another layer between application and Roles/Permissions. Imagine you have an application that has Roles/Permissions on an Account-level (Object) and a Project-level. You could create two objects in this case, each with a different set of Roles/Permissions.
+
+![Permission Structure 2](/images/premission_structure_2.png)
+
+## 3. Multi-level objects with sets of Roles/Permissions per application
+
+To convert an application from **2** to **3** you need at least two objects. Then you can just indent the lower object by clicking on the blue button with right arrow.
+
+Indenting an object means grouping objects together. Imagine you have a bunch of repositories that share the same Roles/Permissions. A parent object holds the right set of entitlements while the child objects inherit them. Mark the parent object “Repositories” as non-requestable as you only want that specific respositories can be requested.
+
+![Permission Structure 3](/images/premission_structure_3.png)
